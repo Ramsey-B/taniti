@@ -1,0 +1,43 @@
+.lodging {
+    padding: 32px;
+}
+
+.resort-header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.resort-contact-info {
+    display: block;
+}
+
+.resort-gallery {
+    display: flex;
+    align-items: center;
+}
+
+.hotel-img {
+    margin-bottom: 8px;
+}
+
+.controls-top {
+    display: none;
+}
+
+.hotels {
+    padding-bottom: 32px;
+    margin: 32px 0;
+
+    .carousel .carousel-indicators li {
+        background-color: blue;
+    }
+    
+    .carousel-indicators {
+        padding-bottom: 0;
+        margin-bottom: -30px;
+    }
+}
+
+.contact-info {
+    display: block;
+}

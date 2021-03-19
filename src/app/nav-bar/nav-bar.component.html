@@ -1,0 +1,34 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="https://dummyimage.com/60x30/a1a1a1/fff&text=Logo" alt="">
+      </a>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': currentUrl === '/'}" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': currentUrl === '/lodging'}" href="./lodging">Lodging</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': currentUrl === '/transportation'}" href="./transportation">Transportation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': currentUrl === '/attractions'}" href="./attractions">Attractions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': currentUrl === '/entertainment'}" href="./entertainment">Entertainment</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->

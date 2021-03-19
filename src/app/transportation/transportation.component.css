@@ -1,0 +1,10 @@
+.transportation {
+    padding: 32px;
+}
+
+.travel-island {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

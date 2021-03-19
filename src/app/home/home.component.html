@@ -1,0 +1,142 @@
+<div class="home">
+    <div class="top-gallery">
+        <mdb-carousel [isControls]="false" [animation]="'none'">
+            <mdb-carousel-item>
+                <!-- <img class="d-block w-100 banner-img"
+                    src="https://images.unsplash.com/photo-1528791075103-b149f525eb22?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                    alt="First slide"> -->
+                <img class="d-block w-100 banner-img" src="https://via.placeholder.com/600x300.png?text=Banner+Image"
+                    alt="First slide">
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Welcome to Taniti!</h3>
+                    <p>Your island destination</p>
+                </div>
+            </mdb-carousel-item>
+        </mdb-carousel>
+    </div>
+
+    <div class="content">
+        <div class="about text-card">
+            <div class="row">
+                <div class="col-4">
+                    <h2>About Taniti</h2>
+                    <!-- <p>Taniti is a small tropical island in the Pacific Ocean. Taniti City sits on the white-sand beaches of
+                        Yellow Leaf Bay. As you move inland, the island boasts many mountainous rain forests ripe for
+                        exploring! With museums, snokerling, breweries, and zip-lining through the rain forest, theres
+                        something for everyone!</p> -->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="col-8">
+                    <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+                        <mdb-carousel-item (click)="navigate('/lodging')">
+                            <img class="d-block w-100 gallery-img"
+                                src="https://via.placeholder.com/300x150.png?text=Lodging+Image" alt="First slide">
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">Lodging</h3>
+                                <p>Click here to find where to stay <i class="fa fa-home" aria-hidden="true"> </i></p>
+                            </div>
+                        </mdb-carousel-item>
+                        <mdb-carousel-item (click)="navigate('/transportation')">
+                            <img class="d-block w-100 gallery-img"
+                                src="https://via.placeholder.com/300x150.png?text=Transportation+Image"
+                                alt="Second slide">
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">Transportation</h3>
+                                <p>Click here for transportation options <i class="fa fa-car" aria-hidden="true"> </i>
+                                </p>
+                            </div>
+                        </mdb-carousel-item>
+                        <mdb-carousel-item (click)="navigate('/attractions')">
+                            <img class="d-block w-100 gallery-img"
+                                src="https://via.placeholder.com/300x150.png?text=Attractions+Image" alt="Third slide">
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">Attractions</h3>
+                                <p>Click here to explore places to go <fa-icon [icon]="faUmbrellaBeach"></fa-icon>
+                                </p>
+                            </div>
+                        </mdb-carousel-item>
+                        <mdb-carousel-item (click)="navigate('/entertainment')">
+                            <img class="d-block w-100 gallery-img"
+                                src="https://via.placeholder.com/300x150.png?text=Entertainment+Image"
+                                alt="Forth slide">
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">Entertainment</h3>
+                                <p>Click here to view things to do <fa-icon [icon]="faSwimmer"></fa-icon>
+                                </p>
+                            </div>
+                        </mdb-carousel-item>
+                    </mdb-carousel>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <div class="row justify-content-md-center review text-card">
+                <h2 class="col-12 review-header">What people are saying...</h2>
+                <div class="col-4">
+                    <img class="profile-img" src="https://via.placeholder.com/200x150.png?text=Profile+Image" alt="">
+                </div>
+                <div class="col-8 review-text">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat."</p>
+                    <p>~ <em>John Doe</em></p>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center review text-card">
+                <div class="col-8 review-text">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat."</p>
+                    <p>~ <em>John Doe</em></p>
+                </div>
+
+                <div class="col-4">
+                    <img class="profile-img" src="https://via.placeholder.com/200x150.png?text=Profile+Image" alt="">
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center review text-card">
+                <div class="col-4">
+                    <img class="profile-img" src="https://via.placeholder.com/200x150.png?text=Profile+Image" alt="">
+                </div>
+                <div class="col-8 review-text">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat."</p>
+                    <p>~ <em>John Doe</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

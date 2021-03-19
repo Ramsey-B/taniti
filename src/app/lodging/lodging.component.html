@@ -1,0 +1,92 @@
+<div class="lodging">
+    <div class="resort-card text-card">
+        <!-- <h2 class="resort-header">White Sands Resort</h2> -->
+        <h2 class="resort-header">4 star resort name</h2>
+        <div class="row resort-content">
+            <div class="col-4 resort-gallery">
+                <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+                    <mdb-carousel-item>
+                        <img class="d-block w-100 gallery-img"
+                            src="https://via.placeholder.com/300x150.png?text=Resort+Image" alt="First slide">
+                    </mdb-carousel-item>
+                    <mdb-carousel-item>
+                        <img class="d-block w-100 gallery-img"
+                            src="https://via.placeholder.com/300x150.png?text=Resort+Image" alt="Second slide">
+                    </mdb-carousel-item>
+                    <mdb-carousel-item>
+                        <img class="d-block w-100 gallery-img"
+                            src="https://via.placeholder.com/300x150.png?text=Resort+Image" alt="Third slide">
+                    </mdb-carousel-item>
+                </mdb-carousel>
+            </div>
+            <div class="col-8">
+                <!-- <p>White Sands is a beautiful four-star resort with a private beach on the shores of Yellow Leaf Bay.
+                    The resort has 3 large pool areas, 2 spas, a 18-hole golf course, boat and jet ski rentals, and a
+                    bar and restraunt. With all these activities, we understand you may need a nice place to relax.
+                    Thats why our all our rooms are equipped with improved sound-proofing, pillow mattress toppers,
+                    spacious bathrooms, ultra wide HD televisions, high-speed Wifi, and a beautiful view of the bay.
+                    White Sands is here to help share the beauty of Taniti while providing our guests an upscale
+                    environment at an affordable price.</p>
+                <span class="resort-contact-info">Call: (555) 123-1234</span>
+                <span class="resort-contact-info">Email: book@whitesands.com</span>
+                <span class="resort-contact-info">Website: www.WhiteSandsofTaniti.com</span> -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <span class="resort-contact-info">Call: resort number</span>
+                <span class="resort-contact-info">Email: resort email</span>
+                <span class="resort-contact-info">Website: resort Website</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hotels text-card">
+        <h2 style="text-align: center;">Hotels</h2>
+
+        <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
+            [animation]="hotels.length > 1 ? 'slide' : 'none'">
+            <mdb-carousel-item *ngFor="let item of hotels; let i = index">
+                <div class="col-md-4" *ngFor="let card of item; let cardIndex = index">
+                    <mdb-card class="my-1">
+                        <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+                        <mdb-card-body>
+                            <mdb-card-title>
+                                <h4>{{card.title}}</h4>
+                            </mdb-card-title>
+                            <p>{{card.description}}</p>
+                            <span class="contact-info"><b>Phone:</b> {{card.phone}}</span>
+                            <span class="contact-info"><b>Email:</b> {{card.email}}</span>
+                            <span class="contact-info"><b>Address:</b> {{card.address}}</span>
+                        </mdb-card-body>
+                    </mdb-card>
+                </div>
+            </mdb-carousel-item>
+        </mdb-carousel>
+    </div>
+
+    <div class="hotels text-card">
+        <h2 style="text-align: center;">Bed & Breakfasts</h2>
+
+        <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
+            [animation]="'slide'">
+            <mdb-carousel-item *ngFor="let item of beds; let i = index">
+                <div class="col-md-4" *ngFor="let card of item; let cardIndex = index">
+                    <mdb-card class="my-1">
+                        <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+                        <mdb-card-body>
+                            <mdb-card-title>
+                                <h4>{{card.title}}</h4>
+                            </mdb-card-title>
+                            <p>{{card.description}}</p>
+                            <span><b>Contact:</b> {{card.contactInfo}}</span>
+                        </mdb-card-body>
+                    </mdb-card>
+                </div>
+            </mdb-carousel-item>
+        </mdb-carousel>
+    </div>
+</div>

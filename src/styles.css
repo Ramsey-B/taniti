@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~font-awesome/css/font-awesome.css';
+
+.app {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1518937875892-50ae13904350?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-card {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 8px 8px 8px #888888;
+    border-radius: 8px;
+}
+
+.text-card-border {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 8px 8px 8px #888888;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 16px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}

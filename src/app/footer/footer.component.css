@@ -1,0 +1,16 @@
+.page-footer {
+    background-color: #343a40 !important;
+    color: white;
+    padding: 16px;
+}
+
+.social-icon {
+    padding: 0 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.social-media {
+    text-align: end;
+    padding-right: 16px;
+}

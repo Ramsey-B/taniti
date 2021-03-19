@@ -1,0 +1,44 @@
+<div class="transportation">
+    <div class="get-to-island text-card">
+        <h2 style="text-align: center; ">How to get to Taniti</h2>
+        <mdb-carousel class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
+            [animation]="toIsland.length > 1 ? 'slide' : 'none'">
+            <mdb-carousel-item *ngFor="let item of toIsland; let i = index">
+                <div class="col-md-4" *ngFor="let card of item; let cardIndex = index">
+                    <mdb-card class="my-1">
+                        <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+                        <mdb-card-body>
+                            <p>{{card.description}}</p>
+                        </mdb-card-body>
+                    </mdb-card>
+                </div>
+            </mdb-carousel-item>
+        </mdb-carousel>
+    </div>
+
+    <div class="travel-island text-card">
+        <h2 style="text-align: center; margin-bottom: 16px;">How to explore the island</h2>
+        <div class="row">
+            <div class="col-3">
+                <img src="https://via.placeholder.com/300x200.png?text=Bus+Image" alt="">
+            </div>
+            <div class="col-3">
+                <img src="https://via.placeholder.com/300x200.png?text=Car+Rental+Image" alt="">
+            </div>
+            <div class="col-3">
+                <img src="https://via.placeholder.com/300x200.png?text=Bike+Rental+Image" alt="">
+            </div>
+            <div class="col-3">
+                <img src="https://via.placeholder.com/300x200.png?text=Walking+Image" alt="">
+            </div>
+        </div>
+
+        <p style="width: 75%; text-align: center; margin-top: 16px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut
+            aliquip ex ea commodo consequat.
+        </p>
+    </div>
+</div>
