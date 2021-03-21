@@ -32,8 +32,7 @@ import { APP_BASE_HREF, HashLocationStrategy, LocationStrategy } from '@angular/
     FontAwesomeModule
   ],
   providers: [
-    { provide: APP_BASE_HREF, useValue: '/' },
-    { provide: LocationStrategy, useClass: HashLocationStrategy }
+    { provide: APP_BASE_HREF, useValue: '/' }
   ],
   bootstrap: [AppComponent]
 })
