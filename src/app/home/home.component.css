@@ -52,3 +52,7 @@
 .review-col {
     margin-bottom: 16px;
 }
+
+.carousel-caption {
+    top: 100px;
+}
