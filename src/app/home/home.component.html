@@ -2,10 +2,8 @@
     <div class="top-gallery">
         <mdb-carousel [isControls]="false" [animation]="'none'">
             <mdb-carousel-item>
-                <!-- <img class="d-block w-100 banner-img"
+                <img class="d-block w-100 banner-img"
                     src="https://images.unsplash.com/photo-1528791075103-b149f525eb22?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                    alt="First slide"> -->
-                <img class="d-block w-100 banner-img" src="https://via.placeholder.com/600x300.png?text=Banner+Image"
                     alt="First slide">
                 <div class="carousel-caption">
                     <h3 class="h3-responsive">Welcome to Taniti!</h3>
@@ -20,25 +18,18 @@
             <div class="row">
                 <div class="col-4">
                     <h2>About Taniti</h2>
-                    <!-- <p>Taniti is a small tropical island in the Pacific Ocean. Taniti City sits on the white-sand beaches of
-                        Yellow Leaf Bay. As you move inland, the island boasts many mountainous rain forests ripe for
-                        exploring! With museums, snokerling, breweries, and zip-lining through the rain forest, theres
-                        something for everyone!</p> -->
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <p>Taniti is a small tropical island in the Pacific Ocean. Taniti City sits on the white-sand beaches of
+                        Yellow Leaf Bay. As you move inland, the island boasts rain forests, mountains, and a volcano ripe for
+                        exploring! Taniti has extensive and affordable public transportation to help make it easy to 
+                        visit the various bars, clubs, and restraunts or see the unique architecture around town. 
+                        With museums, snokerling, breweries, and zip-lining through the rain forest, theres
+                        something for everyone!</p>
                 </div>
                 <div class="col-8">
                     <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
                         <mdb-carousel-item (click)="navigate('/lodging')">
                             <img class="d-block w-100 gallery-img"
-                                src="https://via.placeholder.com/300x150.png?text=Lodging+Image" alt="First slide">
+                                src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="First slide">
                             <div class="carousel-caption">
                                 <h3 class="h3-responsive">Lodging</h3>
                                 <p>Click here to find where to stay <i class="fa fa-home" aria-hidden="true"> </i></p>
@@ -46,7 +37,7 @@
                         </mdb-carousel-item>
                         <mdb-carousel-item (click)="navigate('/transportation')">
                             <img class="d-block w-100 gallery-img"
-                                src="https://via.placeholder.com/300x150.png?text=Transportation+Image"
+                                src="https://images.unsplash.com/photo-1570112500354-526bc4521c1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2690&q=80"
                                 alt="Second slide">
                             <div class="carousel-caption">
                                 <h3 class="h3-responsive">Transportation</h3>
@@ -56,7 +47,7 @@
                         </mdb-carousel-item>
                         <mdb-carousel-item (click)="navigate('/attractions')">
                             <img class="d-block w-100 gallery-img"
-                                src="https://via.placeholder.com/300x150.png?text=Attractions+Image" alt="Third slide">
+                                src="https://images.unsplash.com/photo-1516633630673-67bbad747022?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Third slide">
                             <div class="carousel-caption">
                                 <h3 class="h3-responsive">Attractions</h3>
                                 <p>Click here to explore places to go <fa-icon [icon]="faUmbrellaBeach"></fa-icon>
@@ -65,7 +56,7 @@
                         </mdb-carousel-item>
                         <mdb-carousel-item (click)="navigate('/entertainment')">
                             <img class="d-block w-100 gallery-img"
-                                src="https://via.placeholder.com/300x150.png?text=Entertainment+Image"
+                                src="https://images.unsplash.com/photo-1477894387642-00a731c511b3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c25vcmtlbGluZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
                                 alt="Forth slide">
                             <div class="carousel-caption">
                                 <h3 class="h3-responsive">Entertainment</h3>
@@ -79,62 +70,53 @@
         </div>
 
         <div class="reviews">
-            <div class="row justify-content-md-center review text-card">
-                <h2 class="col-12 review-header">What people are saying...</h2>
-                <div class="col-4">
-                    <img class="profile-img" src="https://via.placeholder.com/200x150.png?text=Profile+Image" alt="">
-                </div>
-                <div class="col-8 review-text">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat."</p>
-                    <p>~ <em>John Doe</em></p>
-                </div>
-            </div>
-
-            <div class="row justify-content-md-center review text-card">
-                <div class="col-8 review-text">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat."</p>
-                    <p>~ <em>John Doe</em></p>
+            <div class="review text-card">
+                <h2 class="review-header">What people are saying...</h2>
+                
+                <div class="row review-col">
+                    <div class="col-4">
+                        <img style="width: 100%; max-height: 150px;" class="profile-img" src="https://images.unsplash.com/photo-1588998677038-18287655a27e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80" alt="">
+                    </div>
+                    <div class="col-8 review-text">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p>"Taniti is gorgeous! The beaches are covered in soft sand and are never overcrowded. Theres so much to do! We spent all day swimming in the warm water or hiking the volcano! When it got dark we'd head into town for drinks and fun!"</p>
+                        <p>~ <em>Jessica</em></p>
+                    </div>
                 </div>
 
-                <div class="col-4">
-                    <img class="profile-img" src="https://via.placeholder.com/200x150.png?text=Profile+Image" alt="">
+                <div class="row review-col">
+                    <div class="col-8 review-text">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p>"My wife and I just got married and were looking for an affordable honeymoon destination, and we couldn't have picked a place better! We were able to bike or walk almost everywhere which saved us a ton of money for things like the heliccopter and boat tours! Zip-lining was crazy but in a fun way, and the volcano is awe inspiring!"</p>
+                        <p>~ <em>James</em></p>
+                    </div>
+    
+                    <div class="col-4">
+                        <img style="width: 100%; max-height: 150px;" class="profile-img" src="https://images.unsplash.com/photo-1524508268646-56d1359f5167?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row justify-content-md-center review text-card">
-                <div class="col-4">
-                    <img class="profile-img" src="https://via.placeholder.com/200x150.png?text=Profile+Image" alt="">
-                </div>
-                <div class="col-8 review-text">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat."</p>
-                    <p>~ <em>John Doe</em></p>
+                <div class="row review-col">
+                    <div class="col-4">
+                        <img style="width: 100%; max-height: 150px;" class="profile-img" src="https://images.unsplash.com/photo-1523225918988-00624e6d8fee?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1899&q=80" alt="">
+                    </div>
+                    <div class="col-8 review-text">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>"We arrived on the cruise ship and immediately fell in love. We didn't wanna leave! The locals are so beautiful and friendly, and beaches are so relaxing! It's incrredibly easy to walk around the city and get a taste of the local foods. Our only complaint is that the cruise only stays for 1 night!"</p>
+                        <p>~ <em>Samantha</em></p>
+                    </div>
                 </div>
             </div>
         </div>
